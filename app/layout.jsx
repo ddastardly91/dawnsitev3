@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
             <Navbar />
             <Container>{children}</Container>
             <Footer />
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
          </body>
-         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       </html>
    );
 }
