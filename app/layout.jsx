@@ -2,8 +2,8 @@ import "./globals.css";
 import { Rubik } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
-import Image from "next/image";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
             <Container>{children}</Container>
             <Footer />
          </body>
+         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       </html>
    );
 }
