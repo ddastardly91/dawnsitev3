@@ -23,7 +23,7 @@ export default function Home() {
             className="absolute top-full z-[-1] animate-spin-slow"
          />
          <main className="mx-5">
-            <Link href="/posts/july-newsletter">
+            <Link href="/posts/2023-07-01-first-post">
                <Featured />
             </Link>
             <div className="grid grid-cols-1 gap-5 my-5 sm:grid-cols-2">

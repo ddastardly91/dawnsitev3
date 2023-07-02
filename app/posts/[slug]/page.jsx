@@ -1,9 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaCalendar } from "react-icons/fa6";
 import { IoIosArrowRoundBack } from "react-icons/io";
+import { getPostData } from "@/lib/posts";
+import { useParams } from "next/navigation";
 
-export default function Page() {
+export default async function Page() {
+   const { slug } = useParams();
+
+   const postData = await getPostData(slug);
+
+   console.log(postData);
    return (
       <div className="mx-5 mb-10">
          <div className="mb-5 underline cursor-pointer decoration-dashed underline-offset-4 hover:text-slate-400">
